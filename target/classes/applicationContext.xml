@@ -14,7 +14,8 @@
     </bean>
 
     <bean id="musicPlayer"
-          class="ro.titus.springcourse.MusicPlayer">
+          class="ro.titus.springcourse.MusicPlayer"
+         scope="prototype">
         <property name="music" ref="musicBean"/>
         <property name="name" value="${musicPlayer.name}"/>
         <property name="volume" value="${musicPlayer.volume}"/>
